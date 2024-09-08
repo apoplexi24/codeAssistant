@@ -86,6 +86,16 @@ class emailBuddy:
         
         
     def addAttachment(self, mime_message: MIMEMultipart, attachment_path: str) -> MIMEMultipart:
+        """
+        Attach a file to the given MIMEMultipart message.
+
+        Args:
+            mime_message (MIMEMultipart): The message to attach the file to.
+            attachment_path (str): The path to the file to attach.
+
+        Returns:
+            MIMEMultipart: The message with the file attached.
+        """
         with open(attachment_path, 'rb') as attachment:
             part = MIMEBase('application', 'octet-stream')
             part.set_payload(attachment.read())

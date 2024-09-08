@@ -8,7 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 python-dotenv = "^1.0.1"
-
+fastapi = "^0.114.0"
+uvicorn = "^0.30.6"
 
 [build-system]
 requires = ["poetry-core"]
