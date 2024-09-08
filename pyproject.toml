@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "codingassistant"
+name = "codeassistant"
 version = "0.1.0"
 description = ""
 authors = ["apoplexi <shivanandanasharma@gmail.com>"]
@@ -15,4 +15,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-run_email_buddy = "codingassistant.emailBuddy:main"
+run_email_buddy = "codeassistant.emailBuddy:main"
